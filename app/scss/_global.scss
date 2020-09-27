@@ -1,0 +1,87 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+* {
+	font-family: "Quicksand";
+	font-weight: 400;
+	font-size: 16px;
+	color: $text;
+}
+
+a {
+	text-decoration: none;
+	outline: transparent;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+button {
+	cursor: pointer;
+	outline: transparent;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.df{
+	display: flex;
+}
+.bg-i {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.btn {  
+  font-size: 14px;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 30px;
+  background-color: $blue;
+  border: 1px solid $blue;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+	transition: all 0.1s linear;
+  &:hover {
+    color: $blue;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  &:focus {
+    color: $blue;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+}
