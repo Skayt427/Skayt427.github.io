@@ -1763,10 +1763,10 @@ li {
 }
 
 .search-product__inner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0030de), color-stop(54%, #1745ed), to(#2e5afb));
-  background-image: -o-linear-gradient(top, #0030de 0%, #1745ed 54%, #2e5afb 100%);
-  background-image: linear-gradient(180deg, #0030de 0%, #1745ed 54%, #2e5afb 100%);
-  opacity: 0.8;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 48, 222, 0.8)), color-stop(54%, rgba(23, 69, 237, 0.8)), to(rgba(46, 90, 251, 0.8)));
+  background-image: -o-linear-gradient(top, rgba(0, 48, 222, 0.8) 0%, rgba(23, 69, 237, 0.8) 54%, rgba(46, 90, 251, 0.8) 100%);
+  background-image: linear-gradient(180deg, rgba(0, 48, 222, 0.8) 0%, rgba(23, 69, 237, 0.8) 54%, rgba(46, 90, 251, 0.8) 100%);
   width: 100%;
   height: 100%;
   text-align: center;
@@ -1807,6 +1807,65 @@ li {
   margin: 10px 13px;
   background-color: transparent;
   border-color: #fff;
+}
+
+.search-product .big-search {
+  position: relative;
+  max-width: 806px;
+  width: 100%;
+}
+
+.search-product .big-search__wrapper {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1140px;
+  width: 100%;
+  height: 135px;
+  bottom: -66px;
+  padding: 40px 40px 40px 40px;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.search-product .big-search__search-field {
+  max-width: 806px;
+  width: 100%;
+  height: 55px;
+  padding: 0 200px 0 27px;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  outline: transparent;
+}
+
+.search-product .big-search__select {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  width: 195px;
+  height: 55px;
+  padding: 0 16px;
+  border: 1px solid gainsboro;
+  border-radius: 0 4px 4px 0;
+  outline: transparent;
+}
+
+.search-product .big-search__button {
+  width: 223px;
+  height: 55px;
+  margin-left: 31px;
+  padding: 0;
+  border-radius: 4px;
+  background-color: #0674ec;
+  border: 1px solid #0674ec;
+  color: #fff;
+}
+
+.search-product .big-search__button:hover {
+  color: #0674ec;
+  background-color: #fff;
 }
 
 @media (min-width: 500px) {
