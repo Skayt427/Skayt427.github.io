@@ -1302,9 +1302,6 @@
     justify-content: start;
     .categories {
       margin-bottom: 20px;
-      &__category {
-        
-      }
     }
   }
   .new-products__inner {
@@ -1318,10 +1315,6 @@
   padding: 120px 0;
   .section-title {
     margin-bottom: 51px;
-  }
-  &-slider {
-    .card {
-    }
   }
 }
 @media (max-width: 700px) {
@@ -1538,9 +1531,6 @@
       }
     }
     &__user {
-      &-inner {
-  
-      }
       &-img {
         width: 80px;
         height: 80px;
@@ -1554,9 +1544,6 @@
         font-size: 20px;
         color: #000;
         margin: 11px 0 12px 0;
-      }
-      &-profession {
-
       }
     }
   }
@@ -1632,12 +1619,6 @@
       margin-left: 28px;
       &-content {
         padding-bottom: 22px;
-        &__heading {
-
-        }
-        &__text {
-
-        }
       }
       &-bottom {
         padding: 10px 0 8px;
