@@ -1,22 +1,22 @@
 $(function () {
-  $(".stars").rateYo({
+  $('.card-bottom__rating').rateYo({
     rating: 4.5,
-    spacing: "5px",
+    spacing: "1.6px",
     readOnly: true,
     starWidth: "15px",
   });
 
-  $('.product-item__wrapper').slick({
+  $('.weekly-slider').slick({
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 4000,
-    prevArrow: $('.features-prev'),
-    nextArrow: $('.features-next'),
+    prevArrow: $('.weekly-prev'),
+    nextArrow: $('.weekly-next'),
   });
 
-  $('.followers__wrapper').slick({
+  $('.followers-slider').slick({
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -24,25 +24,41 @@ $(function () {
     autoplaySpeed: 4000,
     prevArrow: $('.followers-prev'),
     nextArrow: $('.followers-next'),
+    responsive: [
+      {
+        breakpoint: 1130,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
-  $('.feedback-btn__viev').on('click', function () {
-    $('.hidden-item').addClass('show-item');
-    $('.hidden-item').removeClass('hide');
-    $('.feedback-btn__viev').addClass('hide');
-    $('.feedback-btn__viev').removeClass('show-btn');
-    $('.feedback-btn__hide').addClass('show-btn');
-    $('.feedback-btn__hide').removeClass('hide');
+  $('.clients-slider').slick({
+    arrows: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    prevArrow: $('.clients-arrow__prev'),
+    nextArrow: $('.clients-arrow__next'),
+    responsive: [
+      {
+        breakpoint: 790,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      }
+    ],
   });
-
-  $('.feedback-btn__hide').on('click', function () {
-    $('.hidden-item').addClass('hide');
-    $('.hidden-item').removeClass('show-item');
-    $('.feedback-btn__hide').addClass('hide');
-    $('.feedback-btn__hide').removeClass('show-btn');
-    $('.feedback-btn__viev').addClass('show-btn');
-    $('.feedback-btn__viev').removeClass('hide');
-  });
-
   var mixer = mixitup('.new-products__inner');
 });

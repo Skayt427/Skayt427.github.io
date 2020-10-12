@@ -16,6 +16,7 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	color: $text;
+	letter-spacing: -0.6px;
 }
 
 a {
@@ -57,6 +58,10 @@ li {
 	padding: 0 15px;
 	margin: 0 auto;
 }
+.big-container {
+	max-width: 1920px;
+	margin: 0 auto;
+}
 .df{
 	display: flex;
 }
@@ -65,21 +70,24 @@ li {
 	background-size: cover;
 	background-position: center;
 }
-.btn {  
+.btn {
   font-size: 14px;
   padding: 0 10px;
-  color: #fff;
+	color: #fff;
+	text-align: center;
   border-radius: 30px;
   background-color: $blue;
   border: 1px solid $blue;
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 	transition: all 0.1s linear;
   &:hover {
+		text-decoration: none;
     color: $blue;
     background-color: #fff;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
   }
   &:focus {
+		text-decoration: none;
     color: $blue;
     background-color: #fff;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
